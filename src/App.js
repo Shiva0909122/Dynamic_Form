@@ -5,7 +5,7 @@ import UserForm from "./components/UserForm";
 const App = () => {
   const [fields, setFields] = useState([
     {
-      type: "text",
+      type: "text", 
       label: "First Name",
       name: "firstName",
       required: true,
