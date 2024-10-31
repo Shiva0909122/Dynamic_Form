@@ -1,6 +1,6 @@
 {
-  "homepage": "http://parulpathakk.github.io/dynamic-form",
-  "name": "liquide",
+  "homepage": "http://shiva09090122.github.io/dynamic_form",
+  "name": "dynamic_form",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -14,8 +14,6 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "dev": "react-scripts start",
-    "predeploy" :"npm run build",
     "deploy" :"gh-pages -d build",
     "build": "react-scripts build",
     "start": "react-scripts start",
