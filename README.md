@@ -2,7 +2,7 @@
 
 ## Overview
 
-**Dynamic Form** is a dynamic form builder application built with React and Tailwind CSS. It renders form fields dynamically based on a JSON configuration, allowing for flexible and customizable forms. The project showcases advanced form validation, state management, and custom validation logic, all styled with Tailwind CSS.
+**Dynamic_Form** is a dynamic form builder application built with React and Tailwind CSS. It renders form fields dynamically based on a JSON configuration, allowing for flexible and customizable forms. The project showcases advanced form validation, state management, and custom validation logic, all styled with Tailwind CSS.
 
 ## Features
 
@@ -18,7 +18,7 @@ To get started with Dynamic Mic, follow these steps:
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/parulpathakk/dynamic-form.git
+   git clone https://github.com/Shiva0909122/Dynamic_Form.git
    cd dynamic-form
 Install Dependencies
 npm install
@@ -30,5 +30,5 @@ This will start the React development server, and you can view the app at http:/
 
 Acknowledgements
 React
-Tailwind CSS
+CSS
 GitHub Pages
