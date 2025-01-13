@@ -53,7 +53,7 @@ const App = () => {
         </button>
 
       </div>
-<center style="color:#fff;"> © 2024-25 Shivarth. All rights reserved. </center>
+<center> © 2024-25 Shivarth. All rights reserved. </center>
     </div>
   );
 };
