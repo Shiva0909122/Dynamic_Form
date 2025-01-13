@@ -37,7 +37,7 @@ const App = () => {
   return (
     <div className="min-h-screen bg-[#0d0c14] py-[8cqw] md:py-[4cqw] relative">
       <div className="flex flex-col items-center justify-center gap-[8cqw] md:gap-[2cqw]">
-       
+
         <div className="w-full">
           {isAdmin ? (
             <AdminPanel fields={fields} onFieldsChange={handleFieldsChange} />
@@ -45,20 +45,15 @@ const App = () => {
             <UserForm fields={fields} />
           )}
         </div>
-        <button onClick={() => setIsAdmin(!isAdmin)} className="btn">
+        <button
+          onClick={() => setIsAdmin(!isAdmin)}
+          className={`btn ${isAdmin ? "bg-blue-500" : "bg-green-500"}`}
+        >
           Switch to {isAdmin ? "User Form" : "Admin Panel"}
         </button>
 
       </div>
-      <div className="flex justify-end items-end w-full absolute bottom-[6cqw] right-[6cqw] md:bottom-[2cqw] md:right-[2cqw] ">
-        <div className="w-[8.5%]">
-          <img
-            className="z-10 object-cover"
-            src="https://ik.imagekit.io/liquide/tr:w-264/logos/Logo.png"
-            alt="logo"
-          />
-        </div>
-      </div>
+
     </div>
   );
 };

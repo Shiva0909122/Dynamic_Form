@@ -70,9 +70,13 @@ const FieldForm = ({
   };
 
   // Capitalize the first letter of the Field Label
+  // const capitalizeFirstLetter = (string) => {
+  //   return string.charAt(0).toUpperCase() + string.slice(1);
+  // };
   const capitalizeFirstLetter = (string) => {
-    return string.charAt(0).toUpperCase() + string.slice(1);
+    return string.split(" ").map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(" ");
   };
+
 
   const handleFieldChangeWithCapitalization = (e) => {
     const { name, value } = e.target;
@@ -175,9 +179,10 @@ const FieldForm = ({
           </label>
         </div>
       </div>
-      <button onClick={handleAddField} className="btn-small mt-[3cqw] md:mt-[1.2cqw] w-auto">
+      <button onClick={(e) => { e.preventDefault(); handleAddField(); }} className="btn-small mt-[3cqw] md:mt-[1.2cqw] w-auto">
         Add Field
       </button>
+
     </div>
   );
 };
